@@ -34,10 +34,15 @@ android {
 }
 
 dependencies {
+    api(projects.core.model)
+    api(projects.core.common)
+    api(projects.core.designsystem)
 
     implementation(libs.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.hilt.navigation.compose)
+    implementation(libs.androidx.compose.runtime)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
